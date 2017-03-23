@@ -42,6 +42,8 @@ Write-Host ">>>> Remote execution output <<<<"
 $remoteResult = Receive-Job $remoteJob
 $remoteResult
 Write-Host "<<<< End of remote execution output >>>>"
+Write-Host "<<<< End of remote execution output1 >>>>"
+
 
 $finalExitCode = $remoteResult[$remoteResult.Length-1]
 exit $finalExitCode
